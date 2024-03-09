@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <test  name="test">
+   <groups>
+   <run>
+   		<include name="browserOpen"></include>
+   		<include name="Booking_lable"></include>
+  		 <exclude name="Positive_Flow"></exclude>
+  		 <exclude name="Destination_Errormsg"></exclude>
+  		 <exclude name="DoubleLagRoute"></exclude>
+  		 <exclude name="Commudity_Errormsg"></exclude>
+  		<exclude name="Destination_Errormsg_route"></exclude>
+  		 <exclude name="DeletefirstRoute"></exclude>
+  		 <exclude name="DeletesecondtRoute"></exclude>
+  		 <exclude name="ThirdRoute"></exclude>
+  		 <include name="BrowserClosed"></include>
+  		 
+   </run>
+   </groups>
+   
+    <classes>
+      <class name="My_TestListeners.Listnere_methodsClass"/>
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
